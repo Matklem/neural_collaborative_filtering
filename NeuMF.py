@@ -141,13 +141,13 @@ def get_train_instances(train, num_negatives):
         item_input.append(i)
         labels.append(1)
         # negative instances
-        for t in xrange(num_negatives):
-            j = np.random.randint(num_items)
-            while train.has_key((u, j)):
-                j = np.random.randint(num_items)
-            user_input.append(u)
-            item_input.append(j)
-            labels.append(0)
+        #for t in xrange(num_negatives):
+        #    j = np.random.randint(num_items)
+        #    while train.has_key((u, j)):
+        #        j = np.random.randint(num_items)
+        #    user_input.append(u)
+        #    item_input.append(j)
+        #    labels.append(0)
     return user_input, item_input, labels
 
 if __name__ == '__main__':

@@ -25,6 +25,8 @@ from time import time
 import sys
 import argparse
 import multiprocessing as mp
+import tensorflow as tf
+tf.python.control_flow_ops = tf
 
 #################### Arguments ####################
 def parse_args():
